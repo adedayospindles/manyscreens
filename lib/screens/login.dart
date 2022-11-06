@@ -1,7 +1,6 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:manyscreens/screens/register.dart';
+import 'package:manyscreens/screens/resetpass.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -20,7 +19,7 @@ class StartState extends State<LoginScreen> {
             child: Column(
       children: [
         Container(
-          height: 300,
+          height: 250,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.only(bottomLeft: Radius.circular(0)),
             color: new Color(0xffF5591F),
@@ -58,9 +57,9 @@ class StartState extends State<LoginScreen> {
           alignment: Alignment.center,
           margin: EdgeInsets.only(left: 20, right: 20, top: 70),
           padding: EdgeInsets.only(left: 20, right: 20),
-          height: 54,
+          height: 50,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(50),
+            borderRadius: BorderRadius.circular(0),
             color: Colors.grey[200],
             boxShadow: [
               BoxShadow(
@@ -86,9 +85,9 @@ class StartState extends State<LoginScreen> {
           alignment: Alignment.center,
           margin: EdgeInsets.only(left: 20, right: 20, top: 20),
           padding: EdgeInsets.only(left: 20, right: 20),
-          height: 54,
+          height: 50,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(50),
+            borderRadius: BorderRadius.circular(0),
             color: Color(0xffEEEEEE),
             boxShadow: [
               BoxShadow(
@@ -117,8 +116,17 @@ class StartState extends State<LoginScreen> {
           child: GestureDetector(
             onTap: () {
               // Write Click Listener Code Here
+              // Write Tap Code Here.
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ResetPassScreen(),
+                  ));
             },
-            child: Text("Forget Password?"),
+            child: Text(
+              "Forget Password?",
+              style: TextStyle(color: Color(0xffF5591F)),
+            ),
           ),
         ),
         GestureDetector(
@@ -129,13 +137,13 @@ class StartState extends State<LoginScreen> {
             alignment: Alignment.center,
             margin: EdgeInsets.only(left: 20, right: 20, top: 70),
             padding: EdgeInsets.only(left: 20, right: 20),
-            height: 54,
+            height: 50,
             decoration: BoxDecoration(
               gradient: LinearGradient(
                   colors: [(new Color(0xffF5591F)), new Color(0xffF2861E)],
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight),
-              borderRadius: BorderRadius.circular(50),
+              borderRadius: BorderRadius.circular(0),
               color: Colors.grey[200],
               boxShadow: [
                 BoxShadow(
@@ -155,7 +163,7 @@ class StartState extends State<LoginScreen> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Don't Have Any Account?  "),
+              Text("Don't Have An Account?  "),
               GestureDetector(
                 child: Text(
                   "Register Now",

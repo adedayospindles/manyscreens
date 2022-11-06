@@ -53,9 +53,9 @@ class InitState extends State<SignUpScreen> {
           alignment: Alignment.center,
           margin: EdgeInsets.only(left: 20, right: 20, top: 70),
           padding: EdgeInsets.only(left: 20, right: 20),
-          height: 54,
+          height: 50,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(50),
+            borderRadius: BorderRadius.circular(0),
             color: Colors.grey[200],
             boxShadow: [
               BoxShadow(
@@ -81,9 +81,9 @@ class InitState extends State<SignUpScreen> {
           alignment: Alignment.center,
           margin: EdgeInsets.only(left: 20, right: 20, top: 20),
           padding: EdgeInsets.only(left: 20, right: 20),
-          height: 54,
+          height: 50,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(50),
+            borderRadius: BorderRadius.circular(0),
             color: Colors.grey[200],
             boxShadow: [
               BoxShadow(
@@ -109,9 +109,9 @@ class InitState extends State<SignUpScreen> {
           alignment: Alignment.center,
           margin: EdgeInsets.only(left: 20, right: 20, top: 20),
           padding: EdgeInsets.only(left: 20, right: 20),
-          height: 54,
+          height: 50,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(50),
+            borderRadius: BorderRadius.circular(0),
             color: Color(0xffEEEEEE),
             boxShadow: [
               BoxShadow(
@@ -138,9 +138,9 @@ class InitState extends State<SignUpScreen> {
           alignment: Alignment.center,
           margin: EdgeInsets.only(left: 20, right: 20, top: 20),
           padding: EdgeInsets.only(left: 20, right: 20),
-          height: 54,
+          height: 50,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(50),
+            borderRadius: BorderRadius.circular(0),
             color: Color(0xffEEEEEE),
             boxShadow: [
               BoxShadow(
@@ -169,15 +169,15 @@ class InitState extends State<SignUpScreen> {
           },
           child: Container(
             alignment: Alignment.center,
-            margin: EdgeInsets.only(left: 20, right: 20, top: 70),
+            margin: EdgeInsets.only(left: 20, right: 20, top: 50),
             padding: EdgeInsets.only(left: 20, right: 20),
-            height: 54,
+            height: 50,
             decoration: BoxDecoration(
               gradient: LinearGradient(
                   colors: [(new Color(0xffF5591F)), new Color(0xffF2861E)],
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight),
-              borderRadius: BorderRadius.circular(50),
+              borderRadius: BorderRadius.circular(0),
               color: Colors.grey[200],
               boxShadow: [
                 BoxShadow(
@@ -197,7 +197,7 @@ class InitState extends State<SignUpScreen> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Have Already Member?  "),
+              Text("Already A Member?  "),
               GestureDetector(
                 child: Text(
                   "Login Now",

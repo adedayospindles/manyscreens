@@ -1,7 +1,5 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
-
 import 'home.dart';
 
 void main() {
@@ -16,7 +14,7 @@ class SplashScreen extends StatefulWidget {
 class StartState extends State<SplashScreen> {
   @override
   void initState() {
-    // TODO:implement initState
+    // implement initState
     super.initState();
     startTime();
   }
