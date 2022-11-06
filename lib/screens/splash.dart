@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-import 'login.dart';
+import 'home.dart';
 
 void main() {
   runApp(SplashScreen());
@@ -28,7 +28,7 @@ class StartState extends State<SplashScreen> {
 
   route() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => LoginScreen()));
+        context, MaterialPageRoute(builder: (context) => HomeScreen()));
   }
 
   @override

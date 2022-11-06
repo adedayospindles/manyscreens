@@ -2,13 +2,14 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:manyscreens/screens/register.dart';
+import 'package:manyscreens/screens/login.dart';
 
-class LoginScreen extends StatefulWidget {
+class HomeScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => StartState();
 }
 
-class StartState extends State<LoginScreen> {
+class StartState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return initWidget();
@@ -22,7 +23,7 @@ class StartState extends State<LoginScreen> {
         Container(
           height: 300,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(0)),
+            borderRadius: BorderRadius.only(bottomLeft: Radius.circular(90)),
             color: new Color(0xffF5591F),
             gradient: LinearGradient(
               colors: [(new Color(0xffF5591F)), new Color(0xffF2861E)],
@@ -47,7 +48,7 @@ class StartState extends State<LoginScreen> {
                 margin: EdgeInsets.only(right: 20, top: 20),
                 alignment: Alignment.bottomRight,
                 child: Text(
-                  "Login",
+                  "Welcome to Zuri",
                   style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
               )
