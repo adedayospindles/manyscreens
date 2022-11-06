@@ -1,0 +1,4 @@
+#Sun Nov 06 19:44:58 WAT 2022
+base.0=/Users/adedayospindle/Documents/GitHub/manyscreens/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
